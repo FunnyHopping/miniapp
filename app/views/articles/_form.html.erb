@@ -1,0 +1,9 @@
+<div class="container row send">
+  <%= form_with(model: Article.new, local: true) do |form| %>
+    <%= form.label "title", for: 'title' %>
+    <%= form.text_field :title, id: 'title' %>
+    <%= form.label "text", for: 'text' %>
+    <%= form.text_field :text, id: 'text' %>
+    <%= form.submit value: "send", class: "send-btn" %>
+  <% end %>
+</div>
